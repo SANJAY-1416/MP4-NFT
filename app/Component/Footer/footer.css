@@ -1,0 +1,19 @@
+.footer-brand img {
+  padding: 60px 0 10px 5px;
+}
+.fb-in img {
+  padding: 0 0 0 10px;
+}
+.footer-info p {
+  color: rgb(36, 35, 35);
+  font-size: 13px;
+  padding: 0 0 0 10px;
+}
+.footer-detail p {
+  font-size: 13px;
+  padding: 0 0 0 10px;
+  color: rgb(99, 95, 95);
+}
+.footer-detail {
+  padding: 5px 0 0 0;
+}
