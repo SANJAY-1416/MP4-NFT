@@ -1,0 +1,55 @@
+p {
+  margin: 0;
+}
+.reel {
+  display: grid;
+  outline-style: dashed;
+  outline-color: rgb(0, 140, 255);
+  padding: 20px;
+}
+.preview-img img {
+  display: grid;
+  width: 100%;
+}
+.top-preview p {
+  color: #293341;
+  font-size: 24px;
+  font-weight: 800;
+}
+.top-preview {
+  padding: 15px;
+  display: grid;
+  row-gap: 10px;
+
+  max-width: 100%;
+}
+.once p:nth-child(1) {
+  color: #293341;
+  font-size: 16px;
+  font-weight: 700;
+}
+.once p:nth-child(2) {
+  color: #465364;
+  font-size: 14px;
+  font-weight: 200;
+}
+.once h3 {
+  color: #293341;
+  font-size: 16px;
+  font-weight: 500;
+}
+.top-preview button {
+  width: 130px;
+  background-color: #1a79e8;
+  padding: 15px 10px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+}
+.once {
+  display: grid;
+  row-gap: 20px;
+  padding: 15px 0;
+}

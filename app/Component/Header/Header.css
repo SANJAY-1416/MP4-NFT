@@ -31,6 +31,9 @@
   outline: none;
   border: none;
 }
+.toggle img {
+  cursor: pointer;
+}
 .mobile-menu {
   display: block;
   background: black;
@@ -56,14 +59,10 @@
 }
 
 .menus:hover {
-  /* border: 1px solid white; */
-  /* background: rgb(11, 11, 11); */
   color: rgb(239, 235, 235);
   border-radius: 10px;
-  /* padding: 10px; */
 }
 .mobile-search-bar {
-  /* background-color: blue; */
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -87,14 +86,101 @@
 .mobile-menu-button {
   padding: 72px 5px;
   letter-spacing: 1.5px;
+  /* display: none; */
+}
+.mobile-menu-san {
+  display: none;
 }
 .mobile-menu-button button {
   width: 170px;
-  /* letter-spacing: 1px; */
+
   height: 45px;
   border: 1px solid white;
   background: white;
   color: rgb(0, 117, 220);
   border-radius: 100px;
   font-size: 16px;
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .mobile-menu-san {
+    display: block;
+    padding: 0 0 15px 0;
+  }
+  .parent-button {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  .mobile-menu-san button {
+    width: 170px;
+
+    height: 45px;
+    border: 1px solid #293341;
+    background: #293341;
+    color: #ffffff;
+    border-radius: 100px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header {
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    display: grid;
+  }
+  .menu {
+    display: grid;
+  }
+  .button-profile {
+    display: grid;
+  }
+  .toggle {
+    display: none;
+  }
+  .search-bar {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: #f7f9fa;
+    border-radius: 100px;
+    padding: 10px 16px;
+    align-self: center;
+    justify-content: left;
+    grid-gap: 12px;
+    width: 370px;
+  }
+  .search-bar > input {
+    color: #8390a2;
+    background-color: var(--canvas-bg);
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-family: var(--font-inter);
+  }
+  .menu {
+    display: grid;
+    border: none;
+    grid-auto-flow: column;
+    column-gap: 25px;
+  }
+  .menu ul {
+    padding: 0;
+    display: grid;
+  }
+  .button-profile {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 8px;
+  }
+
+  .button-profile button {
+    border: 1px solid #293341;
+    background-color: #293341;
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+  }
 }

@@ -1,0 +1,32 @@
+.top-meta {
+  display: grid;
+  max-width: 100%;
+}
+.meta-mask {
+  display: grid;
+
+  background: white;
+  border-radius: 10px;
+
+  box-shadow: 0px 25px 30px 45px #006ae508;
+  justify-items: center;
+  padding: 40px 0;
+  row-gap: 10px;
+}
+.meta-mask p {
+  color: #293341;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+.meta-mask button {
+  width: 150px;
+  background-color: #293341;
+  color: white;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

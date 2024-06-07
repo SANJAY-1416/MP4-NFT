@@ -1,3 +1,10 @@
+h2 {
+  margin: 0;
+}
+.desc {
+  font-size: 16px;
+  font-weight: 800;
+}
 .view-port-img {
   display: grid;
   justify-items: end;
@@ -5,7 +12,7 @@
 }
 .view-port-img img:nth-child(2) {
   display: grid;
-  /* padding: 5px 0; */
+
   padding: 20px 0 0 0;
 }
 .view-soilt-head h1 {
@@ -73,7 +80,6 @@
   display: grid;
   color: rgb(65, 61, 61);
   font-weight: 500;
-  /* row-gap: 10px; */
 }
 .current-grid-left {
   display: grid;
@@ -98,15 +104,15 @@
 }
 .view-portal {
   display: grid;
-  row-gap: 15px;
+  row-gap: 5px;
 }
 .view-detail-parent {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 5fr;
-  padding: 10px;
+  grid-template-columns: 1fr 10fr;
+  padding: 20px;
   gap: 5px;
-  box-shadow: 14px 25px 30px 45px #006ae508;
+  box-shadow: 4px 5px 5px 5px #006ae508;
 }
 .view-info-about p {
   display: grid;
@@ -121,7 +127,7 @@
 .view-info {
   display: grid;
   row-gap: 15px;
-  box-shadow: 14px 25px 30px 45px #006ae508;
+  /* box-shadow: 14px 25px 30px 45px #006ae508; */
 }
 
 .view-info-about {
@@ -132,15 +138,57 @@
   display: grid;
   row-gap: 5px;
 }
-/* .padd {
-  padding: 10px;
-  display: grid;
-  grid-auto-flow: column;
-  width: 100%;
-} */
+
 .his-view {
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  box-shadow: 14px 25px 30px 45px #006ae508;
+  padding: 10px;
+  /* box-shadow: 14px 25px 30px 45px #006ae508; */
+}
+.image-solid {
+  display: grid;
+  justify-self: center;
+  /* width: 100%; */
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .left-right-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    align-items: center;
+  }
+  h2 {
+    margin: 0;
+  }
+  .right-right {
+    display: grid;
+    padding: 35px 0 0 0px;
+  }
+  .right-left-grid {
+    /* display: grid; */
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    gap: 5px;
+    /* column-gap: 5px; */
+    /* grid-auto-flow: column; */
+  }
+  .class {
+    display: grid;
+    row-gap: 5px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .left-right-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  body {
+    padding: 10px;
+  }
+  .image-solid img {
+    width: 500px;
+    height: 383px;
+  }
 }

@@ -34,12 +34,17 @@ export const Header = () => {
           <button>0 Collectible</button>
           <img src={"/avatar.png"} />
         </div>
+
         <div className="parent-button">
+          <div className="mobile-menu-san">
+            <button>Connect Wallet</button>
+          </div>
           <button className="toggle" onClick={toggleNavbar}>
             {isClick ? <img src={"/close.svg"} /> : <img src={"/burger.svg"} />}
           </button>
-        </div>{" "}
+        </div>
       </div>
+
       {isClick && (
         <div className="mobile-menu">
           <div className="mobile-grid">

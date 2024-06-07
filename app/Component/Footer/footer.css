@@ -1,19 +1,108 @@
 .footer-brand img {
   padding: 60px 0 10px 5px;
 }
-.fb-in img {
-  padding: 0 0 0 10px;
+
+.footer-info {
+  display: grid;
+  row-gap: 10px;
 }
 .footer-info p {
-  color: rgb(36, 35, 35);
-  font-size: 13px;
+  color: #293341;
+  font-size: 16px;
   padding: 0 0 0 10px;
 }
 .footer-detail p {
   font-size: 13px;
   padding: 0 0 0 10px;
-  color: rgb(99, 95, 95);
+  color: #465364;
 }
 .footer-detail {
   padding: 5px 0 0 0;
+}
+.footer {
+  display: grid;
+  row-gap: 20px;
+}
+.footer-detail {
+  display: grid;
+  row-gap: 10px;
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .img-brand {
+    display: grid;
+    /* align-items: center; */
+    justify-items: center;
+    justify-content: flex-start;
+  }
+
+  .fb-in {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    grid-template-columns: 30px 30px 30px 30px;
+  }
+  .fb-in img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-right {
+    display: grid;
+  }
+  .footer-info {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+  }
+  .footer-detail {
+    display: grid;
+    justify-items: flex-end;
+    row-gap: 5px;
+    padding: 20px 0 0 0;
+  }
+  .footer-brand img {
+    padding: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .footer {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .img-brand {
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: 200px 170px;
+    align-items: center;
+  }
+  .footer-info {
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: 150px 128px 181px;
+    justify-items: flex-end;
+  }
+  .footer-brand img {
+    padding: 0;
+  }
+  .footer-right {
+    display: grid;
+    justify-items: flex-end;
+    row-gap: 10px;
+  }
+  .footer-detail p {
+    display: grid;
+    justify-content: flex-end;
+  }
+  .fb-in {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 15px;
+  }
 }

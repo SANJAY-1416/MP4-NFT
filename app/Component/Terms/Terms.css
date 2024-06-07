@@ -1,0 +1,85 @@
+p {
+  margin: 0;
+}
+
+.terms {
+  padding: 10px;
+  display: grid;
+  row-gap: 30px;
+}
+.over-tae {
+  display: grid;
+  row-gap: 40px;
+}
+.two-inputs {
+  display: grid;
+  row-gap: 15px;
+}
+h2 {
+  margin: 0;
+}
+
+.x-circle {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.brand-h-four {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.service {
+  color: rgb(0, 132, 255);
+}
+.terms-of-para {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(108, 117, 128);
+}
+.age {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+.age input {
+  width: 20px;
+  height: 20px;
+}
+.age p {
+  color: #465364;
+  font-size: 14px;
+}
+.accept {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+}
+.accept p {
+  color: #465364;
+  font-size: 14px;
+}
+.accept input {
+  width: 20px;
+  height: 20px;
+}
+.continue-button {
+  display: grid;
+  justify-items: center;
+}
+.continue-button button {
+  border: 1px solid rgb(0, 119, 255);
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 10px;
+  background: rgb(0, 119, 255);
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+}

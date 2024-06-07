@@ -107,4 +107,8 @@ a {
 } */
 body {
   background-color: #ffffff;
+  /* overflow: scroll; */
+}
+button {
+  font-family: var(--font-inter);
 }
