@@ -1,6 +1,8 @@
 .top-meta {
   display: grid;
   max-width: 100%;
+  position: absolute;
+  z-index: 1000;
 }
 .meta-mask {
   display: grid;
@@ -30,3 +32,51 @@
   font-size: 16px;
   cursor: pointer;
 }
+/* components/MetaWallet.module.css */
+
+/* 
+.topMeta {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.metaMask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metaMask img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.metaMask p {
+  margin-bottom: 20px;
+}
+
+.metaMask button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f6851b;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #d9534f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+} */

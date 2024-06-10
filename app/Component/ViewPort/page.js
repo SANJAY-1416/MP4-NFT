@@ -1,6 +1,15 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import "./View.css";
-export const View = () => {
+import Link from "next/link";
+import MetaWallet from "../Metamask/page";
+export default function page() {
+  const [showOverlay, setShowOverlay] = useState(false);
+  const palceBid = () => {
+    setShowOverlay(true);
+  };
+
   return (
     <div>
       <div>
@@ -34,14 +43,14 @@ export const View = () => {
                 <div className="current-grid-left">
                   <p>Current bid</p>
                   <h2>8.38 ETH</h2>
-                  <p>= $22.775</p>
+                  <p className="twenty-two">= $22.775</p>
                 </div>
                 <div className="current-grid-line"></div>
                 <div className="current-grid-right">
                   <p>Bid ending in </p>
                   <div className="timing">
                     <div className="timing-first">
-                      <p>6</p>
+                      <p className="number">6</p>
                       <h5>Hours</h5>
                     </div>
                     <div className="timing-first">
@@ -55,10 +64,11 @@ export const View = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="current-grid-button">
-                <button>Place your bid now</button>
-              </div>
+              <Link href="/Component/Metamask">
+                <div className="current-grid-button">
+                  <button onClick={palceBid}>Place your bid now</button>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="right-left-grid">
@@ -135,6 +145,11 @@ export const View = () => {
           </div>
         </div>
       </div>
+      {showOverlay && (
+        <div className="overlay">
+          <MetaWallet />
+        </div>
+      )}
     </div>
   );
-};
+}

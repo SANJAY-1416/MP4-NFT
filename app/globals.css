@@ -112,3 +112,6 @@ body {
 button {
   font-family: var(--font-inter);
 }
+a {
+  text-decoration: none;
+}

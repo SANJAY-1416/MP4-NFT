@@ -1,7 +1,15 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import "./ManPage.css";
+import Link from "next/link";
+import Term from "../Terms/page";
 
-export const ManPage = () => {
+export default function page() {
+  const [showTerm, setShowTerm] = useState(false);
+  const auctionBid = () => {
+    setShowTerm(true);
+  };
+
   return (
     <>
       <div className="super-grid">
@@ -48,10 +56,17 @@ export const ManPage = () => {
           </div>
 
           <div className="auction-button">
-            <button>Place bid</button>
+            <Link href="/Component/Terms">
+              <button onClick={auctionBid}>Place bid</button>
+            </Link>
           </div>
         </div>
       </div>
+      {showTerm && (
+        <div className="overlay">
+          <Term />
+        </div>
+      )}
     </>
   );
-};
+}

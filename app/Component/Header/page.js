@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import "./Header.css";
+import Link from "next/link";
 
-export const Header = () => {
+export default function page() {
   const [isClick, setisClick] = useState(false);
 
   const toggleNavbar = () => {
@@ -21,10 +22,10 @@ export const Header = () => {
         </div>
         <div className="menu">
           <ul>
-            <a>Home</a>
+            <Link href="/Component/Hero">Home</Link>
           </ul>
           <ul>
-            <a>Create</a>
+            <Link href="/Component/Music">Create</Link>
           </ul>
           <ul>
             <a>Collections</a>
@@ -65,4 +66,4 @@ export const Header = () => {
       )}
     </div>
   );
-};
+}

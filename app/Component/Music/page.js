@@ -1,7 +1,7 @@
 import React from "react";
 import "./Music.css";
 
-export const Music = () => {
+export default function page() {
   return (
     <div>
       <div className="create-music">
@@ -85,4 +85,4 @@ export const Music = () => {
       </div>
     </div>
   );
-};
+}

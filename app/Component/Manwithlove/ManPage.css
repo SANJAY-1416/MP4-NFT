@@ -132,4 +132,5 @@ p {
   border-radius: 100px;
   outline: none;
   border: none;
+  cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-export const Footer = () => {
+export default function page() {
   return (
     <div className="footer">
       <div className="img-brand">
@@ -27,4 +27,4 @@ export const Footer = () => {
       </div>
     </div>
   );
-};
+}
