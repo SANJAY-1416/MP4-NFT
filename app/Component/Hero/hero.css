@@ -44,6 +44,7 @@ p {
   margin: 0;
   font-size: 12px;
   letter-spacing: 0.2px;
+  color: black;
 }
 .hero-img {
   display: grid;
@@ -67,13 +68,7 @@ p {
   padding: 10px 0;
   font-size: 15px;
 }
-/* .hero-img-con img {
-  width: 323px;
-  height: 247px;
-  display: grid;
 
-  justify-content: center;
-} */
 .currnet-bid {
   display: grid;
   grid-auto-flow: column;

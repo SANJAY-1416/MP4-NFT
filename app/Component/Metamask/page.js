@@ -17,18 +17,6 @@ export default function page() {
           </div>
         </div>
       </div>
-      {/* <div className="overlay">
-        <div className="topMeta">
-          <div className="metaMask">
-            <img src={"/fox.svg"} alt="MetaMask logo" />
-            <p>Connect your MetaMask Wallet to continue</p>
-            <Link href="/Component/Manwithlove">
-              <button>Connect Wallet</button>
-            </Link>
-            <button className="closeButton">Close</button>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }
