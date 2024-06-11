@@ -54,12 +54,15 @@ export default function page() {
               <input placeholder="Search Musicians, artists & more...." />
             </div>
             <div className="menus">
-              <a href="/">Home</a>
-              <a href="/">Create</a>
-              <a href="/">Music Collections</a>
+              <Link href="/">Home</Link>
+              <Link href="/Component/Music">Create</Link>
+              <Link href="/">Music Collections</Link>
             </div>
+
             <div className="mobile-menu-button">
-              <button>Connect Wallet</button>
+              <div>
+                <button>Connect Wallet</button>
+              </div>
             </div>
           </div>
         </div>

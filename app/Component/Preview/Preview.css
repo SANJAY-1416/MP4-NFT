@@ -53,3 +53,21 @@ p {
   row-gap: 20px;
   padding: 15px 0;
 }
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .preview-img img {
+    width: 400px;
+  }
+  .reel {
+    justify-items: center;
+  }
+  .once h3 {
+    color: #293341;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .once p:nth-child(1) {
+    color: #293341;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}

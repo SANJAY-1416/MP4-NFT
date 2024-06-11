@@ -1,9 +1,6 @@
 "use client";
 import { useState } from "react";
-
 import Link from "next/link";
-
-import "./Component/Hero/hero.css";
 import MetaWallet from "./Component/Metamask/page";
 
 export default function page() {

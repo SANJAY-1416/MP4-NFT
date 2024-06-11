@@ -1,7 +1,8 @@
 import React from "react";
 import "./Preview.css";
+import Link from "next/link";
 
-export const Preview = () => {
+export default function page() {
   return (
     <div>
       <div className="top-preview">
@@ -21,9 +22,10 @@ export const Preview = () => {
             <h3>6.59 ETH</h3>
           </div>
         </div>
-
-        <button>Continue</button>
+        <Link href="/Component/Congrats">
+          <button>Continue</button>
+        </Link>
       </div>
     </div>
   );
-};
+}
